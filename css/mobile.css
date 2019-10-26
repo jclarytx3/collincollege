@@ -1,15 +1,12 @@
-.title-go {
-  display: none;
+/* Style the main container */
+/* Using a nested grid */
+.main-container{
+    display: grid;
+    grid-template-areas:
+    'article1'
+    'article2'
+    'article3';
 }
-article .figure1-lan-box {
-  width: 40%;
-  max-width: 20rem;
-}
-article .figure1-port-box {
-  width: 30%;
-  max-width: 15rem;
-}
-.collin-footer1 {}
-.collin-footer2 {
-  display: none;
+.header-container h2 {
+    display: none;
 }
