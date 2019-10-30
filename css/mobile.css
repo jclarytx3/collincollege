@@ -1,9 +1,0 @@
-
-@media screen and (max-width: 400px) {
-    .page-container{
-        grid-template-rows: 13rem;
-    }
-}
-.header-container{
-font-size: 100%;
-}
