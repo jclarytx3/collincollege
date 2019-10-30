@@ -37,6 +37,7 @@ body {
 /* Style the main header */
   .main-header{
     color:#F6F6F6;
+    color:red;
   }
 
     /* Style the nav bar using flexbox*/
