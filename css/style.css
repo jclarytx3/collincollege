@@ -8,50 +8,38 @@ body {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   color: black;
   background: white;
-  /* Centering & define max width of the website */
-  min-width: 350px;
-  max-width: 1500px; 
+  /* Centering & define min & max width of the website */
+  /* +++++++++++++++ */
+  min-width: 520px;
+  max-width: 1400px; 
 	margin: 0 auto !important; 
-	float: none !important; 
- }
- /* div.page-container{
-   max-width: 1500px;
- } */
-/* Style the page container */
-/* Note header is repeated for the 1st 2 rows because I'm using h1 & h2 in the same copntainer */
-/* Note that the main main ... is used for the nested grid in the main section. */
+  float: none !important; 
+   /* End of center & define +++++++++++++++ */
+}
+   
+
+ /* Style the page container */
 .page-container{
-  display:grid;
-  grid-template-areas: 
-  'header     header     header'
-  'header     header     header'
-  'nav        nav        nav'
-  'main       main       main'
-  'footer     footer     footer';
-  /* define the row heights for the header */
-  grid-template-rows: 4rem 6rem ;
-  }
+  display: grid;
+  /* will use a 3 column grid for flexability */
+  grid-template-areas: repeat(1, 1fr);
+  grid-template-rows: 10rem;
+}
 /* Style the header container */
 .header-container{
-  grid-area:header;
+  grid-column: 1 / span 1;
   background-image: linear-gradient(black,lightgray);
+  font-size: 150%; 
+  font-weight: bold;
   text-align:center;
   font-family:Arial, Helvetica, sans-serif;
-  }
+}
 /* Style the main header */
-.header-container h1 {
-  color:#F6F6F6;
-  font-size: 3rem;
-}
-/* Style the subheader */
-.header-container h2 {
-  color:#2C2C2C;
-  font-size: 2rem;
-}
-/* Style the nav bar using flexbox*/
-nav {
-  grid-area: nav;
-}
+  .main-header{
+    color:#F6F6F6;
+  }
+
+    /* Style the nav bar using flexbox*/
 nav ul {
   list-style: none;
   background: #333;
@@ -68,29 +56,24 @@ nav ul {
 nav ul li a:hover{
   color: lightblue;
 }
-/* See the mobile, tablet & desktop .css for main container styling */
-.article1{
-  grid-area: article1;
-  padding: 1rem;
-  }
-.article2{
-  grid-area: article2;
-  padding: 1rem;
-  }
-  .article3{
-  grid-area: article3;
-  padding: 1rem;
-  }
-  .article1, .article3{
-  border-right: 3px solid rgb(197, 187, 187);
+/* Style the main container */
+.main-container{
+  display: grid;
+  /* Based this method on https://evanminto.com/blog/intrinsically-responsive-css-grid-minmax-min/ */
+  grid-template-columns: repeat(auto-fill, minmax(calc(10% + 14rem), 1fr));
   border-left: 3px solid rgb(197, 187, 187);
   }
-/* Style the footer */
-footer{
-  grid-area: footer;
+article{
+  padding: 1rem;
+  border-right: 3px solid rgb(197, 187, 187);
+  }
+  /* Style the footer */
+.footer{
+  display:grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column: 1 / span 1;
   background:gray;
   color:rgb(15, 4, 4);
   text-align:center;
   font-family:Arial, Helvetica, sans-serif;
   }
-}

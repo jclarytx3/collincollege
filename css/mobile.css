@@ -1,12 +1,6 @@
-/* Style the main container */
-/* Using a nested grid */
-.main-container{
-    display: grid;
-    grid-template-areas:
-    'article1'
-    'article2'
-    'article3';
+.page-container{
+    /* grid-template-rows: 7rem; */
 }
-.header-container h2 {
-    display: none;
+.header-container{
+font-size: 100%;
 }
