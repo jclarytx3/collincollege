@@ -10,7 +10,7 @@ body {
   background: white;
   /* Centering & define min & max width of the website */
   /* +++++++++++++++ */
-  min-width: 520px;
+  /* min-width: 300px; */
   max-width: 1400px; 
 	margin: 0 auto !important; 
   float: none !important; 
