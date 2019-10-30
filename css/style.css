@@ -8,26 +8,21 @@ body {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   color: black;
   background: white;
-  /* Centering & define min & max width of the website */
+  /* Centering & define max width of the website */
   /* +++++++++++++++ */
-  /* min-width: 300px; */
   max-width: 1400px; 
 	margin: 0 auto !important; 
   float: none !important; 
    /* End of center & define +++++++++++++++ */
 }
-   
-
  /* Style the page container */
 .page-container{
   display: grid;
-  /* will use a 3 column grid for flexability */
   grid-template-areas: repeat(1, 1fr);
   grid-template-rows: 10rem;
 }
 /* Style the header container */
 .header-container{
-  grid-column: 1 / span 1;
   background-image: linear-gradient(black,lightgray);
   font-size: 150%; 
   font-weight: bold;
@@ -37,10 +32,8 @@ body {
 /* Style the main header */
   .main-header{
     color:#F6F6F6;
-    color:red;
   }
-
-    /* Style the nav bar using flexbox*/
+/* Style the nav bar using flexbox*/
 nav ul {
   list-style: none;
   background: #333;
@@ -70,10 +63,9 @@ article{
   }
   /* Style the footer */
 .footer{
-  line-height: .7rem;
+  line-height: .4rem;
   background:gray;
   color:rgb(15, 4, 4);
   text-align:center;
   font-family:Arial, Helvetica, sans-serif;
-  
   }
