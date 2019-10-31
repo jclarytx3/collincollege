@@ -41,6 +41,7 @@ body {
   }
 /* Style the nav bar using flexbox*/
 nav ul {
+  grid-row:2;
   list-style: none;
   background: #333;
   display:flex;
@@ -59,19 +60,36 @@ nav ul li a:hover{
 /* Style the main container */
 .main-container{
   display: grid;
+  grid-row:4;
   /* Based this method on https://evanminto.com/blog/intrinsically-responsive-css-grid-minmax-min/ */
   grid-template-columns: repeat(auto-fill, minmax(calc(10% + 14rem), 1fr));
   border-left: 3px solid rgb(197, 187, 187);
-  }
-article{
-  padding: 1rem;
   border-right: 3px solid rgb(197, 187, 187);
+}
+article{
+  padding: 2rem;
+}
+  article a:link {
+    color: black;
+    text-decoration: underline;
+  }
+  article a:visited {
+    color: black;
+  }
+  article a:hover, a:active {
+    color: red;
   }
   /* Style the footer */
 .footer{
+  grid-row:5;
   line-height: .4rem;
   background:gray;
   color:rgb(15, 4, 4);
   text-align:center;
   font-family:Arial, Helvetica, sans-serif;
   }
+  footer a:link, footer a:visited{
+    color:rgb(15, 4, 4);
+    text-decoration: underline;
+  }
+ 
