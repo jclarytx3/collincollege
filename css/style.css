@@ -14,7 +14,7 @@ html {
   /* set background colors for links */
   --link: black;
   --hover: #ddd;
-  --active:#4CAF50;
+  --active: #4caf50;
   --visited: black;
   /* text colors */
   --text: black;
@@ -134,11 +134,11 @@ a:active {
   text-align: center;
   padding: 1rem 1rem;
   text-decoration: none;
-  font-size:110%;
+  font-size: 110%;
 }
 
 .topnav a:hover {
-  background-color:var(--hover);
+  background-color: var(--hover);
   color: var(--text);
 }
 
@@ -217,7 +217,7 @@ div.desc {
     grid-column-gap: 0.5rem;
   }
   div.desc {
-    padding: .2rem;
+    padding: 0.2rem;
     font-size: 100%;
   }
 }
@@ -233,6 +233,7 @@ div.desc {
 
 /* Style the footer */
 .footer {
+  
   grid-area: footer;
   background: var(--P-Dark);
   line-height: 50%;
@@ -241,11 +242,16 @@ div.desc {
   width: 100%;
   padding: 1.25rem;
 }
-/* Do not show extra footer information when screeen too narrow */
-@media screen and (max-width: 550px) {
-.footerExtra {
- display: none;
+
+/* mobile 1st - efault - do not display extra infomration */
+.footerExtra{
+  display: none;
 }
+/* Show extra footer information when screeen is sufficiently wide */
+@media screen and (min-width: 550px) {
+  .footerExtra {
+    display: inherit;
+  }
 }
 /* HTML5 uses CSS for <hr> (horizontal ruler)  */
 hr {
