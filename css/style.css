@@ -93,7 +93,6 @@ a:active {
   grid-template-areas:
     "header1 header1 header1 header1 header1 header1 header1 header1 header1"
     "topnav topnav topnav topnav topnav topnav topnav topnav topnav"
-    /* "nav nav  nav nav nav nav nav nav nav2" */
     "header2 header2 header2 header2 header2 header2 header2 header2 header2"
     "acType description description picture picture picture picture picture rate"
     "galleryTitle galleryTitle galleryTitle galleryTitle galleryTitle galleryTitle galleryTitle galleryTitle galleryTitle"
