@@ -250,7 +250,7 @@ div.desc {
 /* Show extra footer information when screeen is sufficiently wide */
 @media screen and (min-width: 550px) {
   .footerExtra {
-    display: inherit;
+    display: block;
   }
 }
 /* HTML5 uses CSS for <hr> (horizontal ruler)  */
