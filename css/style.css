@@ -30,7 +30,7 @@ html {
 body {
   /* default character set */
   font-family: "Bitter", serif;
-  background-image: url("../img/sky-1944448_1920.JPG");
+  background-image: url("img/sky-1944448_1920.JPG");
   /* let the background repeat for high resolution monitors */
   background-repeat: repeat;
   /* Limit the width of the body so isn't so spread-out with excessive space between columns*/
