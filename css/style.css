@@ -31,7 +31,7 @@ body {
   /* default character set */
   font-family: "Bitter", serif;
   /* use the ../ to push back up to the parent directory as this is in the css folder */
-  background-image: url("../img/sky-1944448_1920.JPG");
+  background-image: url("/img/sky-1944448_1920.JPG");
   /* let the background repeat for high resolution monitors */
   background-repeat: repeat;
   /* Limit the width of the body so isn't so spread-out with excessive space between columns*/
