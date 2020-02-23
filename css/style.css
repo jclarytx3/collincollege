@@ -243,11 +243,11 @@ div.desc {
   padding: 1.25rem;
 }
 
-/* mobile 1st - efault - do not display extra infomration */
+/* mobile 1st - default - do not display extra information */
 .footerExtra{
   display: none;
 }
-/* Show extra footer information when screeen is sufficiently wide */
+/* Show extra footer information when screen is sufficiently wide */
 @media screen and (min-width: 550px) {
   .footerExtra {
     display: block;
